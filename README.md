@@ -1,7 +1,11 @@
 # Flexcontractor
 
+![Flexcontractor](public/logo-black.png#gh-light-mode-only)
+![Flexcontractor](public/logo-white.png#gh-dark-mode-only)
+
 Bilingual marketing site for Flexcontractor B.V., an Amsterdam renovation and construction firm.
 Nuxt 4 + Tailwind + GSAP, built around a scroll-driven homepage with a supporting set of ordinary pages.
+Preview at [flex-contractor.vercel.app](https://flex-contractor.vercel.app).
 
 ## Stack
 
@@ -136,6 +140,18 @@ left:
 The Unsplash and Pexels licences both allow commercial use without attribution, but crediting the
 photographers is the decent default and costs nothing. Replace all of it with real photography of the
 firm's own work when there is some.
+
+## Project structure
+
+| Path | |
+|---|---|
+| `app/pages/` | Home (the scroll-driven page), services, specialisms, about, contact, careers and privacy |
+| `app/components/` | Header, footer, hero, the specialism scroller, story, values, testimonials and contact sections |
+| `app/composables/` | `useContent` (the active locale's copy) and `useSeo` (titles, canonical and hreflang) |
+| `app/data/` | `site.ts` with the company facts, `content/` with the Dutch and English copy |
+| `server/api/contact.post.ts` | Sends the contact form through Resend |
+| `server/routes/` | Generated `sitemap.xml` and `robots.txt` |
+| `public/` | Logos, favicons and photos |
 
 ## Notes
 
